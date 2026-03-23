@@ -9,10 +9,10 @@ Nessa atividade, você deverá montar a página inicial do projeto escolhido, a 
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Manuel Calebe da Silva Ribeiro
+- Matricula: 837727
+- Proposta de projeto escolhida: Site de uma assistencia tecnica
+- Breve descrição sobre seu projeto: Um site onde voce pode solicitar a asistencia para um determinado produto e consultar o status do conserto do mesmo.
 
 
 ## Print do(s) wireframe(s) criado
