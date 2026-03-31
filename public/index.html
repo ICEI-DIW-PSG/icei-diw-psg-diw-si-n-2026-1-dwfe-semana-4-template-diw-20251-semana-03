@@ -1,12 +1,268 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vaultix – Sua Coleção, Seu Legado" />
+  <meta property="og:description" content="Organize, exiba e descubra coleções únicas de qualquer categoria." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://picsum.photos/id/24/1200/630" />
+
+  <title>Vaultix – Coleções e Itens</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+
+  <!-- HEADER / CABEÇALHO -->
+  <header class="cabecalho">
+    <div class="cabecalho__logo">
+      <span class="cabecalho__logo-icone">&#9671;</span> Vaultix
+    </div>
+
+    <nav class="menu" aria-label="Navegação principal">
+      <ul class="menu__lista">
+        <li class="menu__item"><a class="menu__link menu__link--ativo" href="#">Início</a></li>
+        <li class="menu__item"><a class="menu__link" href="#colecoes">Coleções</a></li>
+        <li class="menu__item"><a class="menu__link" href="#itens">Itens</a></li>
+        <li class="menu__item"><a class="menu__link" href="#comunidade">Comunidade</a></li>
+      </ul>
+    </nav>
+
+    <!-- Formulário de busca -->
+    <form class="busca" action="#" method="get" aria-label="Buscar coleções e itens">
+      <input class="busca__campo" type="search" name="q" placeholder="Buscar coleção ou item..." aria-label="Campo de busca" />
+      <button class="busca__botao" type="submit">Buscar</button>
+    </form>
+  </header>
+
+  <main class="principal">
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Apresentação do site">
+      <div class="hero__fundo">
+        <img class="hero__fundo-img" src="https://picsum.photos/id/24/1600/900" alt="" aria-hidden="true" />
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="hero__conteudo">
+        <p class="hero__tag">&#9671; Plataforma de colecionadores</p>
+        <h1 class="hero__titulo">Sua coleção<br /><em>merece um lar</em></h1>
+        <p class="hero__subtitulo">Organize álbuns, obras, peças raras e muito mais. Exiba ao mundo o que você coleciona com amor.</p>
+        <div class="hero__acoes">
+          <a class="hero__cta hero__cta--principal" href="#colecoes">Explorar coleções</a>
+          <a class="hero__cta hero__cta--secundario" href="#comunidade">Criar conta</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats" aria-label="Números da plataforma">
+      <article class="stats__item">
+        <span class="stats__numero">12k+</span>
+        <span class="stats__label">Coleções criadas</span>
+      </article>
+      <article class="stats__item">
+        <span class="stats__numero">340k</span>
+        <span class="stats__label">Itens cadastrados</span>
+      </article>
+      <article class="stats__item">
+        <span class="stats__numero">8.2k</span>
+        <span class="stats__label">Colecionadores</span>
+      </article>
+      <article class="stats__item">
+        <span class="stats__numero">47</span>
+        <span class="stats__label">Categorias</span>
+      </article>
+    </section>
+
+    <!-- COLEÇÕES EM DESTAQUE -->
+    <section class="colecoes" id="colecoes" aria-labelledby="colecoes-titulo">
+      <div class="colecoes__cabecalho">
+        <div>
+          <h2 class="colecoes__titulo" id="colecoes-titulo">Coleções em destaque</h2>
+          <p class="colecoes__desc">Curadas pela comunidade — as mais admiradas do mês.</p>
+        </div>
+        <a class="colecoes__ver-todas" href="#">Ver todas &rarr;</a>
+      </div>
+
+      <div class="colecoes__grade">
+
+        <article class="cartao-colecao cartao-colecao--grande">
+          <div class="cartao-colecao__imagem-wrap">
+            <img class="cartao-colecao__imagem" src="https://picsum.photos/id/160/800/600" alt="Galeria de arte contemporânea" />
+            <span class="cartao-colecao__categoria">Arte</span>
+          </div>
+          <div class="cartao-colecao__corpo">
+            <h3 class="cartao-colecao__nome">Galeria Contemporânea</h3>
+            <p class="cartao-colecao__dono">por <strong>Marina Souza</strong></p>
+            <p class="cartao-colecao__desc">Obras originais de artistas emergentes brasileiros — pinturas, gravuras e esculturas.</p>
+            <div class="cartao-colecao__rodape">
+              <span class="cartao-colecao__itens">&#9671; 84 itens</span>
+              <a class="cartao-colecao__link" href="#">Ver coleção</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="cartao-colecao">
+          <div class="cartao-colecao__imagem-wrap">
+            <img class="cartao-colecao__imagem" src="https://picsum.photos/id/76/600/400" alt="Coleção de álbuns de vinil" />
+            <span class="cartao-colecao__categoria">Música</span>
+          </div>
+          <div class="cartao-colecao__corpo">
+            <h3 class="cartao-colecao__nome">Vinis dos Anos 70</h3>
+            <p class="cartao-colecao__dono">por <strong>Carlos Mendes</strong></p>
+            <p class="cartao-colecao__desc">Uma jornada sonora pela era dourada do rock e do soul.</p>
+            <div class="cartao-colecao__rodape">
+              <span class="cartao-colecao__itens">&#9671; 210 itens</span>
+              <a class="cartao-colecao__link" href="#">Ver coleção</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="cartao-colecao">
+          <div class="cartao-colecao__imagem-wrap">
+            <img class="cartao-colecao__imagem" src="https://picsum.photos/id/119/600/400" alt="Coleção de câmeras analógicas" />
+            <span class="cartao-colecao__categoria">Fotografia</span>
+          </div>
+          <div class="cartao-colecao__corpo">
+            <h3 class="cartao-colecao__nome">Câmeras Analógicas</h3>
+            <p class="cartao-colecao__dono">por <strong>Ana Figueiredo</strong></p>
+            <p class="cartao-colecao__desc">Desde Leicas vintage até Polaroids raros dos anos 80.</p>
+            <div class="cartao-colecao__rodape">
+              <span class="cartao-colecao__itens">&#9671; 57 itens</span>
+              <a class="cartao-colecao__link" href="#">Ver coleção</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="cartao-colecao">
+          <div class="cartao-colecao__imagem-wrap">
+            <img class="cartao-colecao__imagem" src="https://picsum.photos/id/145/600/400" alt="Coleção de livros raros" />
+            <span class="cartao-colecao__categoria">Literatura</span>
+          </div>
+          <div class="cartao-colecao__corpo">
+            <h3 class="cartao-colecao__nome">Primeiras Edições</h3>
+            <p class="cartao-colecao__dono">por <strong>Rafael Lima</strong></p>
+            <p class="cartao-colecao__desc">Livros raros e primeiras edições de clássicos da literatura mundial.</p>
+            <div class="cartao-colecao__rodape">
+              <span class="cartao-colecao__itens">&#9671; 132 itens</span>
+              <a class="cartao-colecao__link" href="#">Ver coleção</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ITENS RECENTES -->
+    <section class="itens" id="itens" aria-labelledby="itens-titulo">
+      <div class="itens__cabecalho">
+        <h2 class="itens__titulo" id="itens-titulo">Itens adicionados recentemente</h2>
+        <p class="itens__desc">As últimas peças cadastradas pela comunidade.</p>
+      </div>
+
+      <ul class="itens__lista">
+
+        <li class="item-card">
+          <img class="item-card__img" src="https://picsum.photos/id/48/200/200" alt="Pintura abstrata azul" />
+          <div class="item-card__info">
+            <span class="item-card__colecao">Galeria Contemporânea</span>
+            <h3 class="item-card__nome">Azul Infinito #3</h3>
+            <p class="item-card__meta">Pintura a óleo &bull; 2021 &bull; Marina Souza</p>
+          </div>
+          <span class="item-card__badge">Raro</span>
+        </li>
+
+        <li class="item-card">
+          <img class="item-card__img" src="https://picsum.photos/id/96/200/200" alt="Disco de vinil" />
+          <div class="item-card__info">
+            <span class="item-card__colecao">Vinis dos Anos 70</span>
+            <h3 class="item-card__nome">Led Zeppelin IV – 1971</h3>
+            <p class="item-card__meta">Vinil LP &bull; Atlantic Records &bull; UK Press</p>
+          </div>
+          <span class="item-card__badge item-card__badge--destaque">Destaque</span>
+        </li>
+
+        <li class="item-card">
+          <img class="item-card__img" src="https://picsum.photos/id/250/200/200" alt="Câmera analógica vintage" />
+          <div class="item-card__info">
+            <span class="item-card__colecao">Câmeras Analógicas</span>
+            <h3 class="item-card__nome">Leica M3 – 1954</h3>
+            <p class="item-card__meta">Câmera rangefinder &bull; Alemanha &bull; Estado: excelente</p>
+          </div>
+          <span class="item-card__badge">Raro</span>
+        </li>
+
+        <li class="item-card">
+          <img class="item-card__img" src="https://picsum.photos/id/24/200/200" alt="Livro antigo" />
+          <div class="item-card__info">
+            <span class="item-card__colecao">Primeiras Edições</span>
+            <h3 class="item-card__nome">Dom Quixote – Ed. 1605</h3>
+            <p class="item-card__meta">Livro &bull; Cervantes &bull; Fac-símile restaurado</p>
+          </div>
+          <span class="item-card__badge item-card__badge--novo">Novo</span>
+        </li>
+
+        <li class="item-card">
+          <img class="item-card__img" src="https://picsum.photos/id/180/200/200" alt="Escultura de bronze" />
+          <div class="item-card__info">
+            <span class="item-card__colecao">Galeria Contemporânea</span>
+            <h3 class="item-card__nome">Forma & Vazio</h3>
+            <p class="item-card__meta">Escultura em bronze &bull; 2019 &bull; 45cm</p>
+          </div>
+          <span class="item-card__badge item-card__badge--destaque">Destaque</span>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- COMUNIDADE / CADASTRO -->
+    <section class="comunidade" id="comunidade" aria-labelledby="comunidade-titulo">
+      <div class="comunidade__imagem-wrap">
+        <img class="comunidade__imagem" src="https://picsum.photos/id/367/700/500" alt="Pessoa organizando coleção de objetos" />
+      </div>
+
+      <div class="comunidade__conteudo">
+        <p class="comunidade__tag">&#9671; Junte-se a nós</p>
+        <h2 class="comunidade__titulo" id="comunidade-titulo">Comece sua coleção hoje</h2>
+        <p class="comunidade__desc">Crie sua conta gratuita, organize seus itens e conecte-se com outros colecionadores apaixonados.</p>
+
+        <!-- Formulário de cadastro -->
+        <form class="cadastro" action="#" method="post" aria-label="Formulário de cadastro">
+          <div class="cadastro__linha">
+            <input class="cadastro__campo" type="text" name="nome" placeholder="Seu nome completo" required aria-label="Nome completo" />
+            <input class="cadastro__campo" type="email" name="email" placeholder="Seu e-mail" required aria-label="E-mail" />
+          </div>
+          <input class="cadastro__campo" type="password" name="senha" placeholder="Crie uma senha" required aria-label="Senha" />
+          <button class="cadastro__botao" type="submit">Criar conta gratuita</button>
+          <p class="cadastro__login">Já tem conta? <a class="cadastro__login-link" href="#">Entrar</a></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER / RODAPÉ -->
+  <footer class="rodape" aria-label="Rodapé do site">
+    <div class="rodape__marca">
+      <span class="rodape__logo">&#9671; Vaultix</span>
+      <p class="rodape__slogan">Cada item tem uma história.</p>
+    </div>
+
+    <nav class="rodape__nav" aria-label="Links do rodapé">
+      <a class="rodape__link" href="#">Início</a>
+      <a class="rodape__link" href="#colecoes">Coleções</a>
+      <a class="rodape__link" href="#itens">Itens</a>
+      <a class="rodape__link" href="#comunidade">Comunidade</a>
+    </nav>
+
+    <p class="rodape__copy">&copy; 2025 Vaultix. Todos os direitos reservados.</p>
+  </footer>
+
 </body>
+
 </html>

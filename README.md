@@ -9,10 +9,10 @@ Nessa atividade, você deverá montar a página inicial do projeto escolhido, a 
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome:rayssa fernandes da silva 
+- Matricula:906544
+- Proposta de projeto escolhida:coleções e itens
+- Breve descrição sobre seu projeto: o vaultix é um site pra voce mostrar suas coleções.É tipo uma gaaleria online pra postar fotos do que você coleciona e ver o que a galera também tem 
 
 
 ## Print do(s) wireframe(s) criado
